@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #a68383;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #725c93, #bfcddd);
+    color: #143273;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #e1d5d5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    padding-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #2575fc;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-note {
+    font-size: 13px;
+    color: #555;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+#hotline {
+    font-size: 20px;              /* chữ vừa phải, không quá to */
+    color: #5a3825;              /* nâu sang trọng */
+    background: #f9f5f1;         /* nền nhạt */
+    padding: 12px 18px;          /* tạo khoảng cách */
+    border-radius: 10px;         /* bo góc */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* đổ bóng nhẹ */
+    text-align: center;          /* căn giữa */
+    line-height: 1.6;            /* giãn dòng cho dễ nhìn */
+}
+
+#hotline span {
+    display: block;              /* mỗi phần (Hotline, Email) xuống dòng */
+    margin: 4px 0;
+    font-weight: 500;
+}
+
+#hotline span strong {
+    color: #b8742a;              /* nhấn mạnh chữ Hotline, Email */
+}
